@@ -24,7 +24,7 @@
   --teal: #0b9e8a;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: #3a7bd5; color: white; font-family: 'Bricolage Grotesque', sans-serif; min-height: 100vh; }
+body { background: #3a7bd5; color: white; font-family: 'Bricolage Grotesque', sans-serif; min-height: 100vh;font-size: 18px }
 
 /* ── HEADER ── */
 .header {
@@ -45,7 +45,7 @@ display: flex; padding: 0 20px; gap: 4px;
 }
 .mode-btn {
 padding: 12px 22px; cursor: pointer; font-family: ‘Bricolage Grotesque’, sans-serif;
-font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
 color: rgba(255,255,255,0.4); border-bottom: 3px solid transparent;
 margin-bottom: -3px; transition: all 0.2s; background: none; border-top: none; border-left: none; border-right: none;
 }
@@ -66,7 +66,7 @@ FLASHCARDS
 .cat-scroll::-webkit-scrollbar { display: none; }
 .cat-pill {
 padding: 7px 16px; border-radius: 20px; cursor: pointer; white-space: nowrap;
-font-size: 0.78rem; font-weight: 700; border: 2px solid #ead8c0;
+font-size: 0.95rem; font-weight: 700; border: 2px solid #ead8c0;
 background: #ffffff; color: #6b5740; transition: all 0.2s;
 }
 .cat-pill:hover { border-color: #f26419; color: #f26419; }
@@ -74,10 +74,10 @@ background: #ffffff; color: #6b5740; transition: all 0.2s;
 
 /* Progress bar */
 .fc-progress-row { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-.fc-pbar { flex: 1; height: 6px; background: var(–border); border-radius: 3px; overflow: hidden; }
-.fc-pbar-fill { height: 100%; background: #f26419; border-radius: 3px; transition: width 0.4s; }
-.fc-counter { font-family: ‘DM Mono’, monospace; font-size: 0.8rem; color: #b09880; }
-.fc-known { font-size: 0.78rem; font-weight: 700; color: #2a9d5c; }
+.fc-pbar { flex: 1; height: 6px; background: #ead8c0; border-radius: 10px; overflow: hidden; }
+.fc-pbar-fill { height: 100%; background: #f26419; border-radius: 10px; transition: width 0.4s; }
+.fc-counter { font-family: ´DM Mono´, monospace; font-size: 1rem; color: #b09880; }
+.fc-known { font-size: 1rem; font-weight: 700; color: #2a9d5c; }
 
 /* Card flip */
 .card-scene { width: 100%; max-width: 480px; height: 280px; margin: 0 auto 20px; perspective: 1000px; cursor: pointer; }
@@ -138,7 +138,7 @@ transition: all 0.2s;
 .verdict-row { display: flex; gap: 10px; justify-content: center; margin-top: 8px; }
 .verdict-btn {
 padding: 10px 24px; border-radius: 10px; border: none; cursor: pointer;
-font-family: ‘Bricolage Grotesque’, sans-serif; font-size: 0.88rem; font-weight: 700;
+font-family: ´Bricolage Grotesque´, sans-serif; font-size: 0.88rem; font-weight: 700;
 transition: all 0.2s;
 }
 .btn-known { background: #2a9d5c; color: #fff; }
@@ -265,7 +265,7 @@ font-family: ‘DM Mono’, monospace; font-size: 0.78rem; font-weight: 500;
 
 /* Buttons */
 .action-btn {
-background: var(–ink); color: #fff; border: none; border-radius: 11px;
+background: #1c1209; color: #fff; border: none; border-radius: 11px;
 padding: 12px 28px; font-family: ‘Bricolage Grotesque’, sans-serif;
 font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: all 0.2s; margin: 4px;
 }
@@ -791,7 +791,7 @@ function updateTimerUI(t) {
   circ.style.strokeDashoffset = offset;
   circ.style.stroke = t <= 3 ? '#e63946' : t <= 6 ? '#f4a214' : '#f26419';
   num.textContent = t;
-  num.style.color = t <= 3 ? '#e63946' : #1c1209;
+  num.style.color = t <= 3 ? '#e63946' : ´#1c1209´;
 }
 
 function pickQuizOpt(i) {
